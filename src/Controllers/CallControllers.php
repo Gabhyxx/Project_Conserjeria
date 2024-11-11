@@ -10,8 +10,8 @@ public function __construct(){
     $this->index();
 }
 public function index(){
-    $call = new = call;
-    $calls = new = call;->all();
+    $call = new call;
+    $calls = new call;->all();
     }
 
 }
