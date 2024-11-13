@@ -25,7 +25,7 @@
                                     <td>{$call->issue}</td>
                                     <td>{$call->id}</td>
                                     <td>
-                                     <a href="?action=delete&id={$call->id}">❌</a></td>
+                                     <a href='?action=delete&id={$call->id}'>❌</a></td>
                     
                     
                                 </tr>";
