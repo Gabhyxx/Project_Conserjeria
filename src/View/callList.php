@@ -20,10 +20,10 @@
                 foreach ($data["call"] as $call) {
                     echo "
                             <tr>
-                                <td>{$call->DateTime()}</td>
-                                <td>{$call->Room()}</td>
-                                <td>{$call->issue()}</td>
-                                <td>{$call->Id()}</td>
+                                <td>{$call->dateTime}</td>
+                                <td>{$call->room}</td>
+                                <td>{$call->issue}</td>
+                                <td>{$call->id}</td>
                 
                 
                             </tr>";
