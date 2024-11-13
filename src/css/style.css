@@ -1,13 +1,16 @@
 
 header {
-    background-color: #333; 
-    color: #ffffff;
+    background-color:antiquewhite; 
+    color:chocolate;
     padding: 20px 10px;
     text-align: center;
     font-size: 1.5em; 
     font-weight: bold;
-}
 
+}
+.imgPersonHeader{
+    width: 50px;
+}
 header h1 {
     margin: 0; 
 }
@@ -39,8 +42,8 @@ header nav ul li a:hover {
 
 
 footer {
-    background-color: #333; 
-    color: #ffffff; 
+    background-color:antiquewhite; 
+    color:black; 
     padding: 15px 10px;
     text-align: center;
     font-size: 0.9em;
