@@ -28,7 +28,7 @@ class Call {
 		$callList = [];
 
 		foreach ($callArray as $call) {
-			$callItem = new Call($call["id"], $call["room"], $call["issue"], $call["dateTime"]);
+			$callItem = new Call($call["id"], $call["room"], $call["issue"], $call["date"]);
 			array_push($callList, $callItem);
 		}
 		return $callList;
@@ -38,7 +38,7 @@ class Call {
 		$query = $this->database->mysql->query("SELECT * FROM {$this->table} WHERE `id` = {$id}");
 		$result = $query->fetchAll();
 
-		return new Call($result[0]["id"], $result[0]["room"], $result[0]["issue"], $result[0]["dateTime"]);
+		return new Call($result[0]["id"], $result[0]["room"], $result[0]["issue"], $result[0]["date"]);
 	}
 
 	public function destroy() {
