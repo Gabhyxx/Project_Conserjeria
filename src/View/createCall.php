@@ -1,12 +1,13 @@
 <?php
     require_once("Components/layout.php");
 ?>
-
 <body>
     <?php
         require_once("Components/header.php");
     ?>
-
+    <section class="banner">
+        <h2 class="bannerTitle">Formulario de Incidencias</h2>
+    </section>
     <main>
         <h2>New Call</h2>
 
@@ -36,7 +37,6 @@
             </div>
         </form>
     </main>
-
     <?php
         require_once("Components/footer.php");
     ?>

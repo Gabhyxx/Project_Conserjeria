@@ -5,8 +5,11 @@
        <?php
             require_once("Components/header.php")
          ?>
-       <main>
-       <table class="table">
+        <section class="banner">
+            <h2 class="bannerTitle">Incidencias</h2>
+        </section>
+        <main>
+        <table class="table">
             <thead>
                 <tr>
                     <th>Date / Time</th>
@@ -25,12 +28,9 @@
                                     <td>{$call->issue}</td>
                                     <td>{$call->id}</td>
                                     <td>
-                                     <a href='?action=delete&id={$call->id}'>❌</a></td>
-                    
-                    
+                                        <a href='?action=delete&id={$call->id}'>❌</a>
+                                    </td>
                                 </tr>";
- 
-
                     }    
                 ?>
             </tbody>

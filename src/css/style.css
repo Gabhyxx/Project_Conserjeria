@@ -1,58 +1,65 @@
-
-header {
-    background-color:antiquewhite; 
-    color:chocolate;
-    padding: 20px 10px;
-    text-align: center;
-    font-size: 1.5em; 
-    font-weight: bold;
-
-}
-.imgPersonHeader{
-    width: 50px;
-}
-header h1 {
-    margin: 0; 
+:root {
+	--white: #f8f8f2;
+	--black: #282929;
+	--gray: #3b3b3b;
+	--primary: #0099ff;
+	--secondary: #282a36;
 }
 
-header nav ul {
-    list-style: none; 
-    padding: 0;
-    margin: 10px 0 0; 
+html {
+	font-size: 62.5%;
+	box-sizing: border-box;
+}
+
+*, *:before, *:after {
+	box-sizing: inherit;
+}
+
+body {
+	font-size: 16px;
+    background-color: var(--white);
+}
+
+.header {
+    background-color: var(--primary);
+    padding: 2.5rem;
+    margin-bottom: 2rem;
+}
+
+.logoContainer {
     display: flex;
     justify-content: center;
+    align-items: center;
+    margin-bottom: 1rem;
 }
 
-header nav ul li {
-    margin: 0 15px; 
+.logoIcon {
+    width: 5rem;
 }
 
-header nav ul li a {
-    color: #ffffff; 
-    text-decoration: none; 
-    font-weight: normal;
-    padding: 5px 10px;
-    transition: background-color 0.3s ease; 
+.logoTitle {
+    margin-left: 1rem;
+    font-weight: bold;
 }
 
-header nav ul li a:hover {
-    background-color: #555; 
-    border-radius: 5px; 
+.banner {
+    margin-bottom: 1.5rem;
 }
 
-
-footer {
-    background-color:antiquewhite; 
-    color:black; 
-    padding: 15px 10px;
+.bannerTitle {
     text-align: center;
-    font-size: 0.9em;
-    position: relative; 
-    bottom: 0;
-    width: 100%;
+    font-size: 4rem;
+    font-weight: bold;
 }
 
-footer p {
-    margin: 0; 
-    font-size: 0.9em;
+.footer {
+    margin-top: 3.5rem;
+    background-color:var(--secondary); 
+    padding: 3rem;
+}
+
+.footerCopyright {
+    color: var(--white);
+    font-size: 2rem;
+    text-align: center;
 }
