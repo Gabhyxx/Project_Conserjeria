@@ -6,7 +6,7 @@
         require_once("Components/header.php");
     ?>
     <section class="banner">
-        <h2 class="bannerTitle">Formulario de Incidencias</h2>
+        <h2 class="bannerTitle">Incident Form</h2>
     </section>
     <main>
         <h2>New Call</h2>
@@ -17,17 +17,17 @@
 
         <form class="justify-content-center" action="?action=store" method="post">
             <div class="input-group" style="margin-bottom: 2rem; width: 90%; margin-left: 5%">
-                <span class="input-group-text">Issue Room</span>
+                <span class="input-group-text">room</span>
                 <input type="text" name="room" required placeholder="Write here the room">
             </div>
 
             <div class="input-group" style="margin-bottom: 2rem; width: 90%; margin-left: 5%">
-                <span class="input-group-text">Issue description</span>
+                <span class="input-group-text">Description</span>
                 <textarea class="form-control" area-label="Width textarea" type="text" name="issue" required placeholder="Issue description"></textarea>
             </div>
 
             <div class="input-group" style="margin-bottom: 2rem; width: 90%; margin-left: 5%">
-                <span class="input-group-text">Issue Date</span>
+                <span class="input-group-text">Date</span>
                 <input type="date" name="dateTime" required>
             </div>
 

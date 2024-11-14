@@ -6,7 +6,7 @@
             require_once("Components/header.php")
          ?>
         <section class="banner">
-            <h2 class="bannerTitle">Incidencias</h2>
+            <h2 class="bannerTitle">Incidents</h2>
         </section>
         <main>
         <table class="table">
