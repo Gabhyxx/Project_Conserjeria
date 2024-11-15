@@ -22,15 +22,18 @@
                 <?php
                     foreach ($data["call"] as $call) {
                         echo "
-                                <tr>
-                                    <td>{$call->dateTime}</td>
-                                    <td>{$call->room}</td>
-                                    <td>{$call->issue}</td>
-                                    <td>{$call->id}</td>
-                                    <td>
-                                        <a href='?action=delete&id={$call->id}'>❌</a>
-                                    </td>
-                                </tr>";
+                            <tr>
+                                <td>{$call->getDateTime()}</td>
+                                <td>{$call->getRoom()}</td>
+                                <td>{$call->getIssue()}</td>
+                                <td>{$call->getId()}</td>
+                                <td>
+                                    <a href='?action=delete&id={$call->getId()}'>❌</a>
+                                </td>
+                                <td>
+                                    <a href='?action=edit&id={$call->getId()}'>✏️</a>
+                                </td>
+                            </tr>";
                     }    
                 ?>
             </tbody>

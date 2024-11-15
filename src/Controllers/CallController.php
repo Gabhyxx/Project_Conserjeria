@@ -12,17 +12,22 @@ class CallController {
             $this->delete($_GET["id"]);
             return;
         }
-
         if(isset($_GET["action"]) && ($_GET["action"] == "create")) {
             $this->create();
             return;
         }
-
         if(isset($_GET["action"]) && ($_GET["action"] == "store")) {
             $this->store($_POST);
             return;
         }
-
+        if(isset($_GET["action"]) && ($_GET["action"] == "edit")) {
+            $this->edit($_GET["id"]);
+            return;
+        }
+        if(isset($_GET["action"]) && ($_GET["action"] == "update")) {
+            $this->update($_POST, $_GET["id"]);
+            return;
+        }
         $this->index();
     }
 
@@ -49,6 +54,20 @@ class CallController {
         $newCall = new Call(null, $request["room"], $request["issue"], $request["dateTime"]);
         $newCall->save();
 
+        $this->index();
+    }
+
+    public function edit($id) {
+        $callEdit = new Call;
+        $call = $callEdit->findById($id);
+        new View("editCall", ["call" => $call]);
+    }
+
+    public function update(array $request, $id) {
+        $callUpdate = new Call;
+        $call = $callUpdate->findById($id);
+
+        $call->update($request["room"], $request["issue"]);
         $this->index();
     }
 }
