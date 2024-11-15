@@ -46,7 +46,7 @@ class Call {
 	}
 
 	public function save() {
-		$this->database->mysql->query("INSERT INTO {$this->table} (`room`, `issue`) VALUES ('$this->room', '$this->issue')");
+		$this->database->mysql->query("INSERT INTO {$this->table} (`room`, `issue`, `date`) VALUES ('$this->room', '$this->issue', '$this->dateTime')");
 	}
 
 	public function update($room, $issue) {
