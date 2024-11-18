@@ -76,7 +76,7 @@ Download XAMPP: https://www.apachefriends.org/es/index.html
 
 ### Main Site
 
-![App Screenshot](https://res.cloudinary.com/dmkvpncg9/image/upload/v1731661023/Screenshot_qkqzov.png)
+![App Screenshot](https://res.cloudinary.com/dmkvpncg9/image/upload/v1731914212/Screenshot2_oatx9f.png)
 
 ### Test Check
 ![App Screenshot](https://res.cloudinary.com/dmkvpncg9/image/upload/v1731663466/Tests_x2igwy.png)
