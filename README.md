@@ -81,6 +81,8 @@ Download XAMPP: https://www.apachefriends.org/es/index.html
 ### Test Check
 ![App Screenshot](https://res.cloudinary.com/dmkvpncg9/image/upload/v1731663466/Tests_x2igwy.png)
 
+Command: ./vendor/bin/PHPUnit tests
+
 ## Authors
 
 - [Jose Gabriel "Gabhyxx" Peña García](https://www.github.com/Gabhyxx)
